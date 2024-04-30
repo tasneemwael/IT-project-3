@@ -1,0 +1,229 @@
+:root {
+    --primary-background-color: #c3e2d3;
+    --primary-text-color: #f0f3ff;
+    --Light-green1: #74846D;
+    --Light-green2: #99AF8E;
+    --Light-green3: #B8D2AC;
+    --Light-green: #E3FFD6;
+    --Dark-green1: #0CA15A;
+    --Dark-green2: #51D093;
+    --Dark-green3: #87DCB3;
+    --Dark-green: #9ADBBC;
+    --Light-blue1: #04CAE7;
+    --Light-blue2: #6FE0F0;
+    --Light-blue3: #9DE5F0;
+    --Light-blue: #D0F2F7;
+    --Dark-blue1: #4574D6;
+    --Dark-blue2: #6489D4;
+    --Dark-blue3: #7C9AD9;
+    --Dark-blue: #9EB2DB;
+    --purple1: #F0F3FF;
+    --purple2: #3D1EFF;
+    --purple3: #564b9c;
+    --purple: #836FFF;
+    --font1: "Signika";
+    --font2: "Fira Sans";
+}
+
+body {
+    margin: 0;
+
+}
+
+#section1 {
+    background-color: var(--Light-blue);
+}
+
+#section2 {
+    background-color: var(--Light-blue3);
+}
+
+#section3 {
+    background-color: var(--Light-blue2);
+}
+
+#section4 {
+    background-color: var(--Light-blue1);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #b3ffcb;
+    padding: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header {
+    background-color: var(--primary-background-color);
+    /* Set the background color of the header */
+    padding: 20px 0;
+    /* Add some padding to the top and bottom of the header */
+    position: fixed;
+    /* Fixed position to stick to the top of the viewport */
+    width: 100%;
+    /* Full width */
+    top: 0;
+    /* Stick to the top */
+    left: 0;
+    /* Align to the left */
+    z-index: 1000;
+    /* Set a high z-index to ensure it appears above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Align the logo and navbar items at opposite ends */
+    align-items: center;
+}
+
+.navbar {
+    list-style-type: none;
+    /* Remove the default list style */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 50px;
+    /* Add spacing between navbar items */
+    font-size: 28px;
+    font-family: "Signika";
+    position: relative;
+    /* Position relative for pseudo-element */
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last navbar item */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    /* Set the color of the navbar links */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--purple3);
+    /* Change color on hover */
+}
+
+/* Underline animation */
+.navbar a::before {
+    content: '';
+    /* Add content for pseudo-element */
+    position: absolute;
+    bottom: -2px;
+    /* Position the pseudo-element at the bottom */
+    left: 0;
+    /* Start from the left */
+    width: 0;
+    /* Initially set width to 0 */
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: var(--purple3);
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth transition for width */
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    /* Expand width to 100% on hover */
+}
+
+
+.theme-selector select {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px 50px 15px 15px;
+    margin-left: 80px;
+    height: 60px;
+    background-color: var(--purple1);
+    font-family: var(--font2);
+    border-radius: 5px;
+    border: 1px gray solid;
+    text-align: left;
+}
+
+.card {
+    background-color: #aeafdb;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: calc(50% - 40px);
+    /* Adjusted width for two cards in a row */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#section3 form {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section3 label {
+    font-weight: bold;
+}
+
+#section3 input[type="text"],
+#section3 input[type="tel"],
+#section3 input[type="email"],
+#section3 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#section3 input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-background-color);
+    color: black;
+    font-family: var(--font2);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

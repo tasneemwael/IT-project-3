@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" id='themeStylesheet' href="themes/default.css">
+
+  <link rel="stylesheet" id='themeStyleSheet' href="style.css">
+
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="theme-selector">
+        <select name="Themes" id="themeSelect">
+          <option value="default">Default</option>
+          <option value="theme2">Theme 2</option>
+        </select>
+      </div>
+      <ul class="navbar">
+        <li><a class="active" href="../Home/home.html">Home</a></li>
+        <li><a href="../Products/product.html">Shop</a></li>
+        <li><a href="../fitness/blog.html">Blog</a></li>
+        <li><a href="../about-us/about-us.html">About</a></li>
+        <li><a href="../Customer Support/Customer Service.html">Customer Service</a></li>
+        <li><a href="../profile-page2/profile.html">Profile</a></li>
+        <li><a href="../Add to cart/addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Order Checkout</h1>
+    <form id="checkout-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" required>
+      <button type="submit" id="please-order-btn">Please Order</button>
+      <button id="order history-btn" onclick="location.href='../order history/order history/or html.html'">order
+        history</button>
+    </form>
+    <div id="order-confirmation" style="display: none;">
+      <p>Order Placed Successfully!</p>
+      <img src="Thank you.jpg" alt="Order Confirmation Image" style="width: 90vw; height: auto;">
+    </div>
+  </div>
+
+
+  <footer>
+    &copy; <span id="year"></span> | ID: 20230130 | بيان عبد الرحمن محمد عبد الرحمن
+  </footer>
+  <script>
+
+    document.getElementById('checkout-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+      const cardNumber = document.getElementById('card-number').value;
+
+
+      document.getElementById('checkout-form').style.display = 'none';
+      document.getElementById('order-confirmation').style.display = 'block';
+    });
+  </script>
+  <script src="themes/theme.js"></script>
+  <script src="check.js"> </script>
+</body>
+
+</html>

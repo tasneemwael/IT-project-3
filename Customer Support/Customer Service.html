@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" id='themeStylesheet' href="CSS/themes/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="theme-selector">
+                <select name="Themes" id="themeSelect">
+                    <option value="default">Default</option>
+                    <option value="theme2">Theme 2</option>
+                </select>
+            </div>
+            <ul class="navbar">
+                <li><a class="active" href="../Home/home.html">Home</a></li>
+                <li><a href="../Products/product.html">Shop</a></li>
+                <li><a href="../fitness/blog.html">Blog</a></li>
+                <li><a href="../about-us/about-us.html">About</a></li>
+                <li><a href="../Customer Support/Customer Service.html">Customer service</a></li>
+                <li><a href="../profile-page2/profile.html">Profile</a></li>
+                <li><a href="../Add to cart/addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section" id="section1">
+        <h2>Get in touch with our customer service</h2>
+        <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+        <div class="default">
+            <img src="images/Support.gif" alt="Customer Service">
+        </div>
+        <div class="theme2" style="display: none;">
+            <video src="images/customer.mp4" controls loop autoplay></video>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="card">
+            <h3>Direct Contact Form</h3>
+            <p>If you want to send us a message</p>
+            <button onclick="scrollToSection(3)">Go to Form</button>
+        </div>
+        <div class="card">
+            <h3>Contact Details</h3>
+            <p>If you want to call us or find the social media accounts</p>
+            <button onclick="scrollToSection(4)">Go to our Contacts</button>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <h2>Report a Problem</h2>
+        <form id="contactForm" onsubmit="sendEmail(); return false;">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="mobile">Mobile Phone:</label><br>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{11}" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="topic">Complaint Topic:</label><br>
+            <input type="radio" id="product" name="topic" value="product" checked>
+            <label for="product">Product</label><br>
+            <input type="radio" id="coach" name="topic" value="coach">
+            <label for="coach">Coach</label><br>
+            <input type="radio" id="other" name="topic" value="other">
+            <label for="other">Other</label><br>
+
+            <label for="problem">Describe your problem:</label><br>
+            <textarea id="problem" name="problem" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="section" id="section4">
+        <h2>Contact Details</h2>
+        <p class="telephone" onclick="makePhoneCall()">Telephone: <span class="phone-number">123-456-7890</span></p>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/?lang=en"><img src="images/twiter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="images/instgram.jpeg" alt="Instagram"></a>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; <span id="year"></span> | ID: 20230141 | Tasneem Wael
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="CSS/themes/theme.js"></script>
+</body>
+
+</html>

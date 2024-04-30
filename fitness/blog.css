@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(116, 117, 112);
+
+}
+
+h1 { 
+    text-shadow: 2px 2px 5px white;
+    font-style: oblique;
+    color: white; 
+  }
+  .first-section { 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px; 
+  }
+  h3 {
+    color: black; 
+  }
+  h2 { font-style: oblique;
+  padding: 25px; 
+  color: white;
+  text-shadow: 3px 3px 5px white ;
+}
+  .nerd-fitness, 
+  .precision-nutrition, 
+  .born-fitness, 
+  .breaking-muscle, 
+  .trainerize, 
+  .keep-it-simpELLE, 
+  .anytime-fitness 
+  .in summary{
+    display: flex; 
+  } 
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+  div {
+    text-align: justify;
+    padding: 25px 25px 25px 25px;
+    background-color: white;
+
+  }
+  p {
+    text-indent: 30px;
+  }
+  img {
+    max-width: 500px; 
+    width: auto;
+    height: auto; 
+  }
+  .custom-button {
+    padding: 10px 20px; /* Adjust padding to change button size */
+    background-color: #222222; /* Change background color */
+    color: rgb(241, 233, 233); /* Change text color */
+    /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensure button behaves like a block element */
+    font-size: 20px; /* Change font size */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+.custom-button:hover {
+    background-color: #5b5f5b; /* Change background color on hover */
+}
