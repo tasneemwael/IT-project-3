@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 showError("password-error", "Please enter a password.");
             } else if (!isValidPassword(password)) {
                 isValid = false;
-                showError("password-error", "Please enter a password between 8 to 12 characters with no spaces and containing symbols.");
+                showError("password-error", "Please enter a password between 8 to 12 characters with no spaces and containing symbols.try (peter*123)");
             }
 
             if (isValid) {
