@@ -154,7 +154,7 @@ h1 {
 .pannel {
     padding: 0 2rem 2.5rem 2rem;
     background-color: aliceblue;
-    max-height: 80px;
+    max-height: 200px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     display: none;
