@@ -1,41 +1,50 @@
+
+
+
+
+
+
+
+
+
 :root {
     --primary-background-color: #c3e2d3;
-    --primary-text-color: #f0f3ff;
-    --Light-green1: #74846D;
-    --Light-green2: #99AF8E;
-    --Light-green3: #B8D2AC;
+    --primary-text-color: #000000;
+    --Light-green1: #FFFFFF;
+    --Light-green2: #b3ffcb;
+    --Light-green3: #EAFFE0;
     --Light-green: #E3FFD6;
-    --Dark-green1: #0CA15A;
-    --Dark-green2: #51D093;
-    --Dark-green3: #87DCB3;
+    --Dark-green1: #D4FFEB;
+    --Dark-green2: #2DB490;
+    --Dark-green3: #A5E1C5;
     --Dark-green: #9ADBBC;
-    --Light-blue1: #04CAE7;
-    --Light-blue2: #6FE0F0;
-    --Light-blue3: #9DE5F0;
+    --Light-blue1: #F5FEFF;
+    --Light-blue2: #E8FCFF;
+    --Light-blue3: #D3F9FF;
     --Light-blue: #D0F2F7;
-    --Dark-blue1: #4574D6;
-    --Dark-blue2: #6489D4;
-    --Dark-blue3: #7C9AD9;
+    --Dark-blue1: #D4E1FC;
+    --Dark-blue2: #BECFF2;
+    --Dark-blue3: #AAC1F1;
     --Dark-blue: #9EB2DB;
-    --purple1: #F0F3FF;
-    --purple2: #3D1EFF;
-    --purple3: #564b9c;
-    --purple: #836FFF;
+    --purple1: #E1DCFF;
+    --purple2: #564b9c;
+    --purple3: #A090FF;
+    --purple4: #362c73;
+    --purple: #211951;
     --font1: "Signika";
     --font2: "Fira Sans";
 }
 
 body {
     margin: 0;
-
 }
 
 #section1 {
-    background-color: var(--Light-blue);
+    background-color: var(--Light-blue2);
 }
 
 #section2 {
-    background-color: var(--Light-blue3);
+    background-color: var(--Light-blue1);
 }
 
 #section3 {
@@ -47,45 +56,43 @@ body {
 }
 
 .section h2 {
-    margin-bottom: 20px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    background-color: #b3ffcb;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--purple);
     padding: 20px;
+    font-family: var(--font1);
+    font-size: 55px;
     font-weight: bold;
-    font-style: italic;
+    color: white;
 }
+
+.section p {
+    color: black;
+}
+
 
 header {
     background-color: var(--primary-background-color);
-    /* Set the background color of the header */
     padding: 20px 0;
-    /* Add some padding to the top and bottom of the header */
     position: fixed;
-    /* Fixed position to stick to the top of the viewport */
     width: 100%;
-    /* Full width */
     top: 0;
-    /* Stick to the top */
     left: 0;
-    /* Align to the left */
     z-index: 1000;
-    /* Set a high z-index to ensure it appears above other content */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    /* Align the logo and navbar items at opposite ends */
     align-items: center;
 }
 
 .navbar {
     list-style-type: none;
-    /* Remove the default list style */
     margin: 0;
     padding: 0;
     display: flex;
@@ -93,137 +100,192 @@ nav {
 
 .navbar li {
     margin-right: 50px;
-    /* Add spacing between navbar items */
     font-size: 28px;
     font-family: "Signika";
     position: relative;
-    /* Position relative for pseudo-element */
 }
 
 .navbar li:last-child {
     margin-right: 0;
-    /* Remove margin from the last navbar item */
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-    /* Set the color of the navbar links */
     position: relative;
     transition: color 0.3s ease;
 }
-
 .navbar a:hover {
-    color: var(--purple3);
-    /* Change color on hover */
+    color: var(--purple2);
 }
 
-/* Underline animation */
 .navbar a::before {
     content: '';
-    /* Add content for pseudo-element */
     position: absolute;
     bottom: -2px;
-    /* Position the pseudo-element at the bottom */
     left: 0;
-    /* Start from the left */
     width: 0;
-    /* Initially set width to 0 */
     height: 2px;
-    /* Thickness of the underline */
-    background-color: var(--purple3);
-    /* Color of the underline */
+    background-color: var(--purple2);
     transition: width 0.3s ease;
-    /* Smooth transition for width */
 }
 
 .navbar a:hover::before {
     width: 100%;
-    /* Expand width to 100% on hover */
 }
 
 
 .theme-selector select {
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 15px 50px 15px 15px;
-    margin-left: 80px;
-    height: 60px;
-    background-color: var(--purple1);
-    font-family: var(--font2);
-    border-radius: 5px;
-    border: 1px gray solid;
-    text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 15px 50px 15px 15px;
+  margin-left: 80px;
+  height: 60px;
+  background-color: var(--purple1);
+  font-family: var(--font2);
+  border-radius: 5px;
+  border: 1px gray solid;
+  text-align: left;
 }
 
+
+
+
+
+
+
+
 .card {
-    background-color: #aeafdb;
+
     padding: 20px;
-    margin: 20px;
+    margin: 20px 50px;
     border-radius: 10px;
+    border: 1px solid #9086cc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: calc(50% - 40px);
-    /* Adjusted width for two cards in a row */
+    width: 35%;
     display: inline-block;
     vertical-align: top;
+    font-family: var(--font1);
+    font-size: 25px;
+    background-color: white;
+
 }
 
 .card button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin-top: 20px;
-    background-color: #007bff;
+    background-color: var(--purple4);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: var(--font1);
+    font-size: 20px;
+    transition: background-color 0.3s;
+
 }
 
+.card button:hover{
+  background-color: var(--purple);
+}
+
+#section1 video,
+#section1 img
+{
+width: 100%;
+}
+
+
+#section1 p{
+  font-family: var(--font1);
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+
+
+
+
+
+
 #section3 form {
-    background-color: #e0f7fa;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 #section3 label {
     font-weight: bold;
+    font-family: var(--font1)
 }
 
 #section3 input[type="text"],
 #section3 input[type="tel"],
 #section3 input[type="email"],
 #section3 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#contactForm textarea {
+  height: 150px;
+}
+#contactForm label{
+  font-size: 20px;
+  font-family: "Fira Sans";
+  color: black;
+  margin-bottom: 5px;
 }
 
+#contactForm input{
+  margin-bottom: 15px;
+}
+
+
 #section3 input[type="submit"] {
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: var(--purple4);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-family: "Signika";
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  align-content: center;
+}
+
+#section3 input[type="submit"]:hover{
+  background-color: var(--purple);
+}
+
+
+
+#section4{
+  font-size: 25px;
+  font-family: var(--font1);
 }
 
 footer {
-    background-color: var(--primary-background-color);
-    color: black;
-    font-family: var(--font2);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: var(--primary-background-color);
+  color: black;
+  font-family: var(--font2);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
