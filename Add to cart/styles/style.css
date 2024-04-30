@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #080808;
+  border-radius: 5px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity input {
+  width: 40px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.remove-btn {
+  background-color: #4caa7e;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#checkout-btn {
+  background-color: #4caa7e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

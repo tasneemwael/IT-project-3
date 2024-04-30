@@ -1,0 +1,153 @@
+body{
+  margin: 0px;
+  background-color: white;
+}
+
+p{
+  font-family: var(--font1);
+}
+
+.back{
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 850px;
+}
+
+.back-picture{
+  object-fit: cover;
+  margin-top: 0px;
+  width:580px;
+  height: 850px;
+  display: inline-block;
+}
+
+.heading{
+  color: white;
+  font-size: 80px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.we-have{
+  color: white;
+  font-size: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.intro-container{
+  width:600px;
+  margin-left: 150px;
+  margin-top: 150px;
+}
+
+.intro-paragraph{
+  color: white;
+  font-size: 25px;
+  text-align:justify;
+}
+
+.our-story{
+  color: black;
+  font-size: 45px;
+  margin-left: 50px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.our-story-paragraph{
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align:justify;
+}
+
+.supplements-sec,
+.training-sec{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+}
+
+.our-supplements,
+.our-training,
+.our-team{
+  color: black;
+  font-size: 45px;
+  margin-left: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.our-supplements-paragraph,
+.our-trainig-paragraph{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align:justify;
+}
+
+.supp-picture{
+  
+  width: 700px;
+  height: 650px;
+  margin-right: 0px;
+  margin-left: 50px;
+}
+
+.team-info{
+  background-color: var(--purple6);
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+.our-team{
+  text-align: center;
+  margin-top: 40px;
+  margin-top: 0px;
+  color: var(--purple1);
+}
+
+.team-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.person-info{
+  background-color: var(--purple1);
+  margin: 20px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.person-name{
+  font-size: 25px;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left:50px;
+  padding-right: 5dvi;
+}
+
+.short-sentence{
+  font-family: arial;
+  text-align: center;
+  font-size: 20px;
+  padding-left:15px;
+  padding-right: 20px;
+}
+
+footer {
+  background-color: var(--purple6);
+  color: white;
+  font-family: var(--font1);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
