@@ -6,8 +6,8 @@
     --Light-green3: #EAFFE0;
     --Light-green: #E3FFD6;
     --Dark-green1: #D4FFEB;
-    --Dark-green2: #2DB490;
-    --Dark-green3: #A5E1C5;
+    --Dark-green2: #dbf7cc;
+    --Dark-green3: #30551b;
     --Dark-green: #9ADBBC;
     --Light-blue1: #F5FEFF;
     --Light-blue2: #E8FCFF;
@@ -20,7 +20,8 @@
     --purple1: #E1DCFF;
     --purple2: #BDB2FF;
     --purple3: #A090FF;
-    --purple: #836FFF;
+    --purple4: #362c73;
+    --purple: #211951;
     --font1: "Signika";
     --font2: "Fira Sans";
 }
@@ -30,8 +31,19 @@ body {
 }
 
 #section1 {
-    background-color: var(--Light-green1);
+    background-color: var(--Dark-green2);
+}
 
+#section2 {
+    background-color: var(--Light-green2);
+}
+
+#section3 {
+    background-color: var(--Dark-green2);
+}
+
+#section4 {
+    background-color: var(--Light-green2);
 }
 
 .section h2 {
@@ -41,15 +53,16 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    background-color: var(--Light-green2);
+    background-color: var(--Dark-green3);
     padding: 20px;
     font-family: var(--font1);
-    font-size: 40px;
+    font-size: 55px;
     font-weight: bold;
+    color: white;
 }
 
 .section p {
-    color: var(--Light-blue1);
+    color: black;
 }
 
 header {
@@ -60,11 +73,11 @@ header {
     position: fixed;
 
     width: 100%;
- 
+
     top: 0;
-  
+
     left: 0;
-  
+
     z-index: 1000;
 
 }
@@ -72,7 +85,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
- 
+
     align-items: center;
 }
 
@@ -86,53 +99,53 @@ nav {
 
 .navbar li {
     margin-right: 50px;
-  
+
     font-size: 28px;
     font-family: "Signika";
     position: relative;
-    
+
 }
 
 .navbar li:last-child {
     margin-right: 0;
-    
+
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-    
+
     position: relative;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
     color: var(--Dark-green2);
-    
+
 }
 
 
 .navbar a::before {
     content: '';
-  
+
     position: absolute;
     bottom: -2px;
-   
+
     left: 0;
-  
+
     width: 0;
-   
+
     height: 2px;
-   
+
     background-color: var(--Dark-green2);
-   
+
     transition: width 0.3s ease;
-    
+
 }
 
 .navbar a:hover::before {
     width: 100%;
-   
+
 }
 
 
@@ -151,66 +164,132 @@ nav {
 }
 
 .card {
-    background-color: #f0f0f0;
+
     padding: 20px;
-    margin: 20px;
+    margin: 20px 50px;
     border-radius: 10px;
+    border: 1px solid var(--Dark-green3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: calc(50% - 40px);
+    width: 35%;
     display: inline-block;
     vertical-align: top;
+    font-family: var(--font1);
+    font-size: 25px;
+    background-color: white;
+
 }
 
 .card button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin-top: 20px;
-    background-color: #007bff;
+    background-color: #45752a;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: var(--font1);
+    font-size: 20px;
+    transition: background-color 0.3s;
+
 }
 
+.card button:hover{
+  background-color: var(--Dark-green3);
+}
+
+#section1 video,
+#section1 img
+{
+width: 100%;
+}
+
+
+#section1 p{
+  font-family: var(--font1);
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+
+
+
+
+
+
 #section3 form {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 #section3 label {
     font-weight: bold;
+    font-family: var(--font1)
 }
 
 #section3 input[type="text"],
 #section3 input[type="tel"],
 #section3 input[type="email"],
 #section3 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#contactForm textarea {
+  height: 150px;
+}
+#contactForm label{
+  font-size: 20px;
+  font-family: "Fira Sans";
+  color: black;
+  margin-bottom: 5px;
+
 }
 
+#contactForm input{
+  margin-bottom: 15px;
+
+}
+
+
 #section3 input[type="submit"] {
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #45752a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-family: "Signika";
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  align-content: center;
+}
+
+#section3 input[type="submit"]:hover{
+  background-color: var(--Dark-green3);
+}
+
+
+
+#section4{
+  font-size: 25px;
+  font-family: var(--font1);
 }
 
 footer {
-    background-color: var(--purple6);
+    background-color: var(--purple);
     color: white;
     font-family: var(--font1);
     text-align: center;
