@@ -3,7 +3,7 @@ function themeChange() {
     const themeStyleSheet = document.getElementById('themeStylesheet');
     const currentTheme = localStorage.getItem('theme') || 'default';
     function changeTheme(theme) {
-        themeStyleSheet.setAttribute('href', 'themes/' + theme + '.css'); 
+        themeStyleSheet.setAttribute('href', 'Home/themes/' + theme + '.css'); 
     }
     themeButton.addEventListener('change', function () {
         changeTheme(themeButton.value);
