@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Benifits of workouts</title>
+    <meta charset="UTF-8">
+    <meta name="Fitness website about workouts and Fitness products">
+    <link rel="stylesheet" href="CssFolder/CssSide2.css">
+    <link rel="stylesheet" id='themeStylesheet' href="themes/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="theme-selector">
+                <select name="Themes" id="themeSelect">
+                    <option value="default">Default</option>
+                    <option value="theme2">Theme 2</option>
+                </select>
+            </div>
+            <ul class="navbar">
+                <li><a class="active" href="../Home/home.html">Home</a></li>
+                <li><a href="../Products/product.html">Shop</a></li>
+                <li><a href="../fitness/blog.html">Blog</a></li>
+                <li><a href="../about-us/about-us.html">About</a></li>
+                <li><a href="../Customer Support/Customer Service.html">Customer service</a></li>
+                <li><a href="../profile-page2/profile.html">Profile</a></li>
+                <li><a href="../Add to cart/addToCart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="styled">
+        Health and Exercising
+    </h1>
+    <h4 class="styled">"A talk by Dr. Peter Attia _ Dr. Andrew Huberman"</h4>
+    <video src="Best Exercises for Overall Health _ Longevity _ Dr. Peter Attia _ Dr. Andrew Huberman.mp4" controls
+        muted poster="Vidposter.png" width="800px" height="450px"></video>
+    <h3 class="styled">Why is exercise so important for seniors?</h3>
+    <p class="styled">
+        Whether you were once much more physically active or have never been one to exercise regularly, now is a
+        great time to start
+        an exercise and fitness regimen. Getting and staying in shape is just as important for seniors as it is for
+        younger people.
+    </p>
+    <p class="styled">
+        Why is exercise important for older people? Getting your heart rate up and challenging your muscles benefits
+        virtually every
+        system in your body <br> and improves your physical and mental health in myriad ways. Physical activity
+        helps maintain a healthy
+        blood pressure, keeps harmful<br> plaque from building up in your arteries, reduces inflammation, improves
+        blood sugar levels,
+        strengthens bones, and helps stave<br> off depression. In addition, a regular exercise program can lead to
+        better quality sleep,
+        reduce your risk of some cancers, <br>and is linked to longer life.
+    </p>
+    <p class="styled" style="text-align: right;">
+        Many older adults hesitate to get moving because they’re unfamiliar with the types of exercise and fitness
+        that are effective
+        and safe,and <br> aren’t sure how much exercise they need to do. The good news is that any kind of movement
+        is better than being
+        sedentary, so there’s <br> nothing wrong with starting small and working your way up to longer workouts.
+        Your goal should be no
+        less than 150 minutes of <br>moderate intensity activity per week, but if you can’t start at that level,
+        work up to it
+        (and then past it). While there are many<br> dedicated forms of exercise and fitness for adults, you also
+        want to stay physically
+        active throughout the day by taking<br> the stairs, doing yard work, and playing with your grandkids.
+    </p>
+    <h3 class="styled">The components and factors of health-related fitness:</h3>
+    <table border="5px">
+        <tr>
+            <th>Morphological components</th>
+            <th>Muscular components</th>
+            <th>Motor components</th>
+            <th>Cardio components</th>
+            <th>Metabolic components</th>
+        </tr>
+        <tr>
+            <td>Body mass for height</td>
+            <td>Power</td>
+            <td>Agility</td>
+            <td>Submaxical excersise</td>
+            <td>Glucose Tolerance</td>
+        </tr>
+        <tr>
+            <td>Body Composition</td>
+            <td>Strength</td>
+            <td>Balance</td>
+            <td>Maximal Aerobic capacity</td>
+            <td>insulin sensitivity</td>
+        </tr>
+        <tr>
+            <td>Fat distribution</td>
+            <td>Endurance</td>
+            <td>Coordination</td>
+            <td>Cardiac functions</td>
+            <td>Lipid and Lipoprotien</td>
+        </tr>
+        <tr>
+            <td>Abdominal visceral fat </td>
+            <td colspan="2">Speed of movment</td>
+            <td>Lung function</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bone destiny Flexibilty</td>
+            <td colspan="2"></td>
+            <td>Blood pressure</td>
+            <td></td>
+        </tr>
+    </table>
+    <p class="styled">To register in a form for health and workouts emails press here:
+        <button class="register" onclick="openOptions('form')">
+            Register
+        </button>
+    </p>
+    <div class="form1">
+        <form id="form">
+            <h2>Fill your data for more workouts and health related information:</h2>
+            <p>
+                Your full name:
+            </p>
+            <input id="name" type="text" name="full name">
+            <p>
+                Your phone number:
+            </p>
+            <input id="mobile" type="text" name="phone number">
+            <p>
+                Your email address:
+            </p>
+            <input id="email" type="text" name="address">
+            <button class="submit-button" onclick="validateForm()">submit</button>
+        </form>
+    </div>
+    <h3 class="styled">To go back to the workouts page click here:</h3>
+    <a href="Workouts from home.html">
+        <button>
+            Workouts from home</button>
+    </a>
+    <script src="themes/theme.js"></script>
+    <footer>
+        &copy; <span id="year"></span> | ID: 20230120 | Bassam Ahmed Shehata
+    </footer>
+    <script>function openOptions(popupId) {
+            var optionsPopup = document.getElementById(popupId);
+            optionsPopup.style.display = "block";
+        }
+        function validateForm() {
+            var fullname = document.getElementById('name').value;
+            var mobile = document.getElementById('mobile').value;
+            var email = document.getElementById('email').value;
+
+            if (name === "" || mobile === "" || email === "") {
+                alert("Please fill out all fields correctly.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

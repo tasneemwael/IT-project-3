@@ -1,0 +1,23 @@
+html, body {
+    text-align: justify;
+    text-justify:inter-word ;
+}
+
+h1.styled{
+    margin: 18px;
+    font-size: 45px ;
+}
+
+p{
+    margin: 15px;
+}
+
+.styled2{
+    margin:40px;
+    font-size: 21px;
+}
+
+button.nextpage {
+    font-size: 25px;
+    margin-left: 45%;
+}
