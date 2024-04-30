@@ -78,11 +78,10 @@ body {
 header {
     background-color: var(--primary-background-color);
     padding: 20px 0;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+
 }
 
 nav {
