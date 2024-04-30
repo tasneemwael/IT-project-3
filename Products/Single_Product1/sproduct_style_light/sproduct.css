@@ -1,0 +1,363 @@
+
+
+
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 150px;
+}
+
+.main-image img {
+  width: 500px;
+  padding-left: 65px;
+}
+
+.sub-images {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub-images img {
+  width: 150px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.sub-images img:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.description {
+  margin-left: 120px;
+  margin-top: 80px;
+}
+
+.product-name {
+  font-size: 80px;
+  font-family: "Signika";
+  margin: 0;
+  font-weight: bold;
+  color:  #362c73;
+}
+
+.detail {
+  font-family: "Fira Sans";
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.grams {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.subscript {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.detail-description {
+  font-size: 30px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 237px;
+  width: 500px;
+  left: 60%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Signika";
+  background-color: #362c73;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  font-size: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #211951;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+.buttons-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.buttons-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
+  color: black;
+  transition: color 0.3s;
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: "Signika";
+
+}
+
+#description-btn{
+  margin-left: 150px;
+}
+
+.buttons-container button:hover {
+  color: #2db490;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.additional-details-container {
+  display: block;
+  vertical-align: top;
+  width: 45%;
+  margin-right: 5px;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+
+.additional-details {
+  display: inline-block;
+  width: 75%;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 0px;
+  margin-left: 150px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+.heading {
+  font-family: "Signika";
+  font-size: 50px;
+  color: #362c73;
+}
+
+.paragraph,
+.components-list {
+  line-height: 30px;
+  font-size: 18px;
+  font-family: "Fira Sans";
+}
+
+.components-list {
+  padding-left: 15px;
+}
+
+.paragraph {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-form-container {
+  display: none;
+  clear: both;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+.review-form-container p {
+  font-family: "Signika";
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 60px;
+
+}
+
+#review-form {
+  width: 1475px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 20px;
+  font-family: "Fira Sans";
+  color: black;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-review-btn {
+  background-color: #362c73;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-family: "Signika";
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  align-content: center;
+
+}
+
+.submit-review-btn:hover {
+  background-color: #211951;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.advanced-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 100px auto;
+}
+
+.advanced-table td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+  font-family: "Signika";
+}
+
+.row-title{
+  font-size: 25px;
+  font-weight: bold;
+  color:  #362c73;
+}
+
+.advanced-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.advanced-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+.advanced-table td:first-child {
+  width: 100px; 
+}

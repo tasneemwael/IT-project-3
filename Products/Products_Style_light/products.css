@@ -1,0 +1,157 @@
+
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+
+.categories {
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.photo img {
+  cursor: pointer;
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.5s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.1);
+}
+
+.category {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
+  color: black;
+  transition: color 0.3s;
+  justify-content: center;
+  margin-right: 80px;
+  font-family: "Signika";
+}
+
+.category:active,
+.category:focus,
+.category:hover {
+  color: #2db490;
+}
+
+.products-title {
+  font-size: 150px;
+  margin-bottom: 60px;
+  margin-top: 80px;
+  font-family: "Signika";
+  color: #211951;
+}
+
+.photo-container {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.product {
+  margin: 0 10px;
+  position: relative;
+}
+
+.info {
+  position: relative;
+}
+
+.salary,
+.add-to-cart-btn {
+  position: absolute;
+  bottom: -60px;
+  width: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: "Signika";
+}
+
+.add-to-cart-btn {
+  background-color: #362c73;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+
+.product:hover .salary {
+  display: none;
+}
+
+.product:hover .add-to-cart-btn {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-bottom: 80px;
+}
+
+.video-container {
+    position: absolute;
+    top: 30px;
+    bottom: 20px;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-title {
+  font-size: 60px;
+  margin-bottom: 25px;
+  margin-top: 220px;
+  max-width: 80%;
+  font-family: "Signika";
+  color: #211951;
+  font-weight: bold;
+  position: relative; 
+}

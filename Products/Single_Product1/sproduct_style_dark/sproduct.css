@@ -1,0 +1,394 @@
+
+
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 150px;
+  background-color: black;
+}
+
+.main-image img {
+  width: 500px;
+  padding-left: 5px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.sub-images {
+  position: absolute;
+  top: 145px;
+  left: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.sub-images img {
+  width: 125px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+}
+
+.sub-images img:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.description {
+  margin-left: 270px;
+  margin-top: 65px;
+}
+
+.product-name {
+  font-size: 80px;
+  font-family: "Signika";
+  margin: 0;
+  font-weight: bold;
+  color:  #baafff;
+}
+
+.detail {
+  font-family: "Fira Sans";
+  display: inline-block;
+  margin-right: 100px;
+  color: white;
+}
+
+.grams {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.subscript {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.detail-description {
+  font-size: 30px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 181px;
+  width: 500px;
+  left: 60%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Signika";
+  background-color: #564a9e;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  font-size: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #362c73;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 22px;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.buttons-container {
+    text-align: left;
+    background-color: black;
+}
+
+.buttons-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+  transition: color 0.3s;
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: "Signika";
+
+}
+
+#description-btn{
+  margin-left: 150px;
+}
+
+.buttons-container button:hover {
+  color: #2db490;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.additional-details-container {
+  position: relative;
+}
+
+.additional-details-container:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -10%;
+  right: 0;
+  bottom: -50px;
+  background-color: black;
+  z-index: -1;
+}
+
+.additional-details {
+  display: inline-block;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 445px;
+  box-shadow: 0 -2px 5px white;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.heading {
+  font-family: "Signika";
+  font-size: 50px;
+  color: #362c73;
+}
+
+.paragraph,
+.components-list {
+  line-height: 30px;
+  font-size: 18px;
+  font-family: "Fira Sans";
+}
+
+.components-list {
+  padding-left: 15px;
+}
+
+.paragraph {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-form-container {
+  position: absolute;
+  top: 1000px;
+  right: 200px;
+}
+.review-form-container:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -1800px;
+  right: -200px;
+  bottom: -50px;
+  background-color: black;
+  z-index: -1;
+}
+
+.review-form-container p {
+  position: absolute;
+  font-family: "Signika";
+  font-size: 120px;
+  font-weight: bold;
+  color: #baafff;
+  margin-top: 75px;
+  margin-left: -900px;
+  max-width: 999px;
+  display: inline-block;
+
+}
+
+
+#review-form {
+  width: 450px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 20px;
+  font-family: "Fira Sans";
+  color: black;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-review-btn {
+  background-color: #362c73;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-family: "Signika";
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.submit-review-btn:hover {
+  background-color: #211951;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.additional-info-table {
+  position: relative;
+}
+
+.additional-info-table:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -10%;
+  right: 0;
+  bottom: -100px;
+  background-color: black;
+  z-index: -1;
+}
+
+.advanced-table {
+  width: 25%;
+  border-collapse: collapse;
+  margin: 100px auto;
+}
+
+.advanced-table td {
+  border: 2px solid white;
+  padding: 30px;
+  text-align: left;
+  font-family: "Signika";
+  background-color: black;
+  color: white;
+}
+
+.row-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.advanced-table td:first-child {
+  width: 100px; 
+}

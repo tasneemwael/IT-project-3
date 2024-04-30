@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+
+  <link rel="stylesheet" href="sproduct_style_light/sproduct.css" id="theme">
+  <link rel="stylesheet" href="themes/default.css" id='themeStylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+
+
+<body>
+  <header>
+    <nav>
+      <div class="theme-selector">
+        <select name="Themes" id="themeSelect">
+          <option value="default">Default</option>
+          <option value="theme2">Theme 2</option>
+        </select>
+      </div>
+      <ul class="navbar">
+        <li><a class="active" href="../../Home/home.html">Home</a></li>
+        <li><a href="../product.html">Shop</a></li>
+        <li><a href="../../fitness/blog.html">Blog</a></li>
+        <li><a href="../../about-us/about-us.html">About</a></li>
+        <li><a href="../../Customer Support/Customer Service.html">Customer support</a></li>
+        <li><a href="../../profile-page2/profile.html">Profile</a></li>
+        <li><a href="../../Add to cart/addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="image-container">
+      <div class="main-image">
+        <!-- Main image -->
+        <img src="Images/protein1.jpg" alt="Main Product Image">
+      </div>
+      <div class="sub-images">
+        <img src="Images/protein1.jpg" alt="sub image1" onclick="changeMainImage(this)">
+        <img src="Images/1.jpg" alt="sub image1" onclick="changeMainImage(this)">
+        <img src="Images/2.jpg" alt="sub image2" onclick="changeMainImage(this)">
+        <img src="Images/3.jpg" alt="sub image3" onclick="changeMainImage(this)">
+      </div>
+    </div>
+
+    <div class="description">
+      <p class="product-name">Platinum Hydro WHEY</p>
+      <div class="detail">
+        <p class="grams">24</p>
+        <sub class="subscript">G</sub>
+        <p class="detail-description">100% WHEY PROTEIN</p>
+      </div>
+      <div class="detail">
+        <p class="grams">5.5</p>
+        <sub class="subscript">G</sub>
+        <p class="detail-description">NATURALLY OCCURING BCAAS</p>
+      </div>
+      <a href="../../Add to cart/addToCart.html" class="add-to-cart-btn">Add to Cart</a>
+
+      <div class="quantity-selector">
+        <input type="number" class="quantity-input" value="1" min="1">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="buttons-container">
+    <button id="description-btn" onclick="showDescription()">Description</button>
+    <button id="additional-info-btn" onclick="showAdditionalInfo()">Additional Information</button>
+    <button id="reviews-btn" onclick="showReviews()">Reviews(0)</button>
+  </div>
+
+
+  <div class="additional-details-container" id="description-container">
+    <div class="additional-details">
+      <h1 class="heading">FOR MUSCLE SUPPORT & RECOVERY</h1>
+      <p class="paragraph">
+        Whey Protein Isolates (WPI) are the purest form of whey protein that currently exists. WPIs are costly to use,
+        but rate among the best proteins that money can buy. That’s why they’re the first ingredient you read on the
+        Gold Standard 100% Whey™ label. By using WPI as the primary ingredient along with premium ultra-filtered whey
+        protein concentrate (WPC), we’re able to pack 24 grams of protein into every serving to support your muscle
+        building needs after training. ON’s attention to detail also extends to mixability.
+      </p>
+      <ul class="components-list">
+        <li>Whey Protein Isolate (WPI) Main Ingredient</li>
+        <li>Whey Protein Microfractions from Whey Protein Isolates & Ultra-Filtered Whey Protein Concentrate</li>
+        <li>Over 4 Grams of Glutamine & Glutamic Acid in Each Serving</li>
+        <li>More Than 5 Grams of the Naturally Occurring Branched Chain Amino Acids (BCAAs) Leucine, Isoleucine, and
+          Valine in Each Serving</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="additional-details-container" id="description-container">
+    <div class="additional-details">
+      <h1 class="heading">SUGGESTED USE</h1>
+      <p class="paragraph">
+        Mix 1 scoop of Combat 100% Whey with 8-12 fl. oz. of cold water. Vary the amount of water to achieve desired
+        consistency and taste. To increases your protein intake per serving and achieve a delicious milkshake taste, use
+        milk instead of water. Consume additional serving throughout the day to meet your daily protein requirements.
+        Use in combination with whole food protein sources.
+      </p>
+      <ul class="components-list">
+        <li>Expiration Date: September 2026</li>
+        <li>Shipping Weight: 6.68</li>
+        <li>Package Quantity: 5 lb</li>
+        <li>Dimensions: 11.5 x 7.5 x 7.5 in, 5.65 lbs</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="review-form-container" id="review-form-container">
+    <p>Be the first to review our product!</p>
+    <form id="review-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Osama Ahmed Khaled" title="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ea7375792@gmail.com" required title="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required title="Select your rating">
+          <option value="">Select Rating</option>
+          <option value="5">5 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="2">2 Stars</option>
+          <option value="1">1 Star</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="4" required placeholder="Write your review here"
+          title="Enter your review"></textarea>
+      </div>
+      <button type="submit" class="submit-review-btn">Submit</button>
+    </form>
+  </div>
+
+
+
+
+  <div class="additional-info-table" id="additional-info-table" style="display: none;">
+    <table class="advanced-table">
+      <tbody>
+        <tr>
+          <td class="row-title">Taste</td>
+          <td>Chocolate, Honey, Vanilla ice cream</td>
+        </tr>
+        <tr>
+          <td class="row-title">Weight</td>
+          <td>1 kg, 2 kg, 3 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <footer>
+    &copy; <span id="year"></span> | ID: 20230075 | Esraa Ahmed Abo-Elaas
+  </footer>
+
+
+
+  <script src="themes/theme.js"></script>
+  <script src="sproduct.js"></script>
+</body>
+
+</html>

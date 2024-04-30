@@ -1,0 +1,92 @@
+
+body {
+
+    background-color: lightgray;
+}
+
+.main {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.top-bar {
+    background-color: teal;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.top-bar i {
+    color: white;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.top-bar a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+.cont{
+    display: flex;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    background-color: whitesmoke;
+    padding: 20px;
+    height: 150%; 
+    width: 1500px;
+}
+
+.col-md-8 {
+    flex: 3; 
+    padding-right: 20px; 
+}
+
+.col-md-4 {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.side-bar {
+    background-color: #333;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1000;
+}
+
+.side-bar img {
+    size: 150px;
+}
+
+.side-bar a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+.text-secondary {
+    color: gray;
+    position: fixed;
+    padding-top: 50px
+}

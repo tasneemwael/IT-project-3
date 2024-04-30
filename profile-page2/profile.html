@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" id='themeStylesheet' href="themes/default.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="theme-selector">
+                <select name="Themes" id="themeSelect">
+                    <option value="default">Default</option>
+                    <option value="theme2">Theme 2</option>
+                </select>
+            </div>
+            <ul class="navbar">
+                <li><a class="active" href="../Home/home.html">Home</a></li>
+                <li><a href="../Products/product.html">Shop</a></li>
+                <li><a href="../fitness/blog.html">Blog</a></li>
+                <li><a href="../about-us/about-us.html">About</a></li>
+                <li><a href="../Customer Support/Customer Service.html">Customer support</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="../Add to cart/addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="top-bar">
+                <i class="fas fa-user"></i>
+
+            </div>
+            <div class="cont">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card-content">
+                            <h1>About</h1>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div>
+                                        <h5>Full Name</h5>
+                                    </div>
+                                    <input disabled type="text" id="fullName">
+                                </div>
+
+                                <div class="row">
+                                    <div>
+                                        <h5>Email</h5>
+                                    </div>
+                                    <input disabled type="email" id="email">
+                                </div>
+
+                                <div class="row">
+                                    <div>
+                                        <h5>Phone</h5>
+                                    </div>
+                                    <input disabled type="number" id="phone">
+                                </div>
+
+                                <div class="row">
+                                    <div>
+                                        <h5>address</h5>
+                                    </div>
+                                    <input disabled type="text" id="address">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="side-bar">
+                        <img src="imgs/profile.png" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="themes/theme.js"></script>
+    <footer>
+        &copy; <span id="year"></span> | ID: 20230131 | Peter Joseph Helmy
+    </footer>
+</body>
+
+</html>
