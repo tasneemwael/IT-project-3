@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gifts and Donation</title>
+  <link rel="stylesheet" href="style-gifts.css">
+  <link rel="stylesheet" id='themeStylesheet' href="themes2/theme2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet">
+  <style>
+    table {
+      border-style: solid;
+      border-color: var(--purple1);
+      margin-bottom: 40px;
+      margin-left: 40px;
+      width: 70%;
+      font-size: 20px;
+    }
+
+    th {
+      color: var(--Light-green1);
+      height: 50px;
+      font: var(--font1);
+    }
+
+    td {
+      background-color: var(--purple1);
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="theme-selector">
+        <select name="Themes" id="themeSelect">
+          <option value="default">Default</option>
+          <option value="theme2">Theme 2</option>
+        </select>
+      </div>
+      <ul class="navbar">
+        <li><a class="active" href="../Home/home.html">Home</a></li>
+        <li><a href="../Products/product.html">Shop</a></li>
+        <li><a href="../fitness/blog.html">Blog</a></li>
+        <li><a href="../about-us/about-us.html">About</a></li>
+        <li><a href="../Customer Support/Customer Service.html">Contact</a></li>
+        <li><a href="../profile-page2/profile.html">Profile</a></li>
+        <li><a href="../Add to cart/addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="packages">
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/casein.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/red-whey.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Gold Standard 100% CASEIN
+          </p>
+          <p class="second-product">
+            + Gold Standard 100% WHEY
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$3835.00</del>
+          </p>
+          <p class="new-price">
+            $3600.00
+          </p>
+        </div>
+        <div class="button">
+          <audio id="sound" src="mixkit-arcade-game-jump-coin-216.wav" preload="auto"></audio>
+          <button class="select-option-button" onclick="openOptions('optionsPopup1')"
+            onclick="document.getElementById('')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup1" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_1" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_1" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_1', 'option2_1', 'optionsPopup1', 'dataPopup1_1', 'dataPopup2_1', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1_1" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName1">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber1">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address1">
+            <div class="buttons">
+              <button onclick="validateForm('fullName1', 'phoneNumber1', 'address1')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_1" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName2">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber2">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address2">
+            <div class="buttons">
+              <button onclick="validateForm('fullName2', 'phoneNumber2', 'address2')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/creatine.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/gold-whey.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Micronized creatine powder
+          </p>
+          <p class="second-product">
+            + Naturally Flavored Gold Standart
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$3788.00</del>
+          </p>
+          <p class="new-price">
+            $3550.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup2')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup2" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_2" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_2" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_2', 'option2_2', 'optionsPopup2', 'dataPopup1_2', 'dataPopup2_2', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1_2" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName3">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber3">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address3">
+            <div class="buttons">
+              <button onclick="validateForm('fullName3', 'phoneNumber3', 'address3')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_2" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName4">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber4">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address4">
+            <div class="buttons">
+              <button onclick="validateForm('fullName4', 'phoneNumber4', 'address4')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/isolyze.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/iso-hd.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            ISOLYZE Pure Whey Protein Isolate
+          </p>
+          <p class="second-product">
+            + ISO HD
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$3061.00</del>
+          </p>
+          <p class="new-price">
+            $3900.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup3')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup3" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_3" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_3" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_3', 'option2_3', 'optionsPopup3', 'dataPopup1_3', 'dataPopup2_3', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1_3" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName5">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber5">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address5">
+            <div class="buttons">
+              <button onclick="validateForm('fullName5', 'phoneNumber5', 'address5')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_3" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName6">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber6">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address6">
+            <div class="buttons">
+              <button onclick="validateForm('fullName6', 'phoneNumber6', 'address6')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/creatine.jpg">
+        </div>
+        <div>
+          <img class="second-img-special" src="products/nuun-hydration.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Micronized creatine powder
+          </p>
+          <p class="second-product">
+            + Nuun Hydration
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$2989.00</del>
+          </p>
+          <p class="new-price">
+            $2899.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup4')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup4" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_4" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_4" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_4', 'option2_4', 'optionsPopup4', 'dataPopup1_4', 'dataPopup2_4', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1_4" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName7">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber7">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address7">
+            <div class="buttons">
+              <button onclick="validateForm('fullName7', 'phoneNumber7', 'address7')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_4" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName8">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber8">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address8">
+            <div class="buttons">
+              <button onclick="validateForm('fullName8', 'phoneNumber8', 'address8')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/pre-workout.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/stinger-gel.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Gold Standart PRE-WORKOUT
+          </p>
+          <p class="second-product">
+            + Honey Stinger Gel
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$3237.00</del>
+          </p>
+          <p class="new-price">
+            $3100.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup5')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup5" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_5" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_5" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_5', 'option2_5', 'optionsPopup5', 'dataPopup1_5', 'dataPopup2_5', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1_5" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName9">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber9">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address9">
+            <div class="buttons">
+              <button onclick="validateForm('fullName9', 'phoneNumber9', 'address9')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_5" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName10">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber10">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address10">
+            <div class="buttons">
+              <button onclick="validateForm('fullName10', 'phoneNumber10', 'address10')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/stinger-gel.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/serious-mass.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Honey Stinger Gel
+          </p>
+          <p class="second-product">
+            + Serious MASS
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$3027.00</del>
+          </p>
+          <p class="new-price">
+            $2885.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup6')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup6" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_6" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_6" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_6', 'option2_6', 'optionsPopup6', 'dataPopup1-6', 'dataPopup2_6', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1-6" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName11">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber11">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address11">
+            <div class="buttons">
+              <button onclick="validateForm('fullName11', 'phoneNumber11', 'address11')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_6" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName12">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber12">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address12">
+            <div class="buttons">
+              <button onclick="validateForm('fullName12', 'phoneNumber12', 'address12')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-ditails">
+      <div class="images">
+        <div>
+          <img class="first-img" src="products/hydro-whey.jpg">
+        </div>
+        <div>
+          <img class="second-img" src="products/casein.jpg">
+        </div>
+      </div>
+      <div>
+        <div class="products-name">
+          <p class="first-product">
+            Gold Standard 100% CASEIN
+          </p>
+          <p class="second-product">
+            + Platinum Hydro WHEY
+          </p>
+        </div>
+        <div class="prices">
+          <p class="last-price">
+            <del>$4805.00</del>
+          </p>
+          <p class="new-price">
+            $4705.00
+          </p>
+        </div>
+        <div class="button">
+          <button class="select-option-button" onclick="openOptions('optionsPopup7')">
+            Select Option
+          </button>
+        </div>
+        <div id="optionsPopup7" class="optionsPopup">
+          <form id="optionsForm">
+            <h2 class="package-for">package for</h2>
+            <input type="radio" id="option1_7" name="you" value="you" class="option1">You</br>
+            <input type="radio" id="option2_7" name="your friend" value="your friend" class="option2">Your Friend</br>
+            <button
+              onclick="openDataPopup('option1_7', 'option2_7', 'optionsPopup7', 'dataPopup1-7', 'dataPopup2_7', event)"
+              class="submit-button">
+              submit
+            </button>
+          </form>
+        </div>
+        <div id="dataPopup1-7" class="dataPopup1">
+          <form id="dataForm1" class="dataForm">
+            <h2>Fill your data</h2>
+            <p>
+              Your full name:
+            </p>
+            <input type="text" name="full name" id="fullName13">
+            <p>
+              Your phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber13">
+            <p>
+              Your address:
+            </p>
+            <input type="text" name="address" id="address13">
+            <div class="buttons">
+              <button onclick="validateForm('fullName13', 'phoneNumber13', 'address13')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="dataPopup2_7" class="dataPopup2">
+          <form id="dataForm2" class="dataForm">
+            <h2>Fill your friend's data</h2>
+            <p>
+              Your friend's full name:
+            </p>
+            <input type="text" name="full name" id="fullName14">
+            <p>
+              Your friend's phone number:
+            </p>
+            <input type="text" name="phone number" id="phoneNumber14">
+            <p>
+              Your friend's address:
+            </p>
+            <input type="text" name="address" id="address14">
+            <div class="buttons">
+              <button onclick="validateForm('fullName14', 'phoneNumber14', 'address14')" class="submit-button">
+                submit
+              </button>
+              <button class="cancle-button">
+                cancle
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <table>
+    <tr>
+      <th>Brand Categories</th>
+      <th>PRODUCTS</th>
+    </tr>
+    <tr>
+      <td>ActiveLab</td>
+      <td>Micronized Creatine Powder</td>
+    </tr>
+    <tr>
+      <td>BioTech</td>
+      <td>Honey Stinger Gel</td>
+    </tr>
+    <tr>
+      <td>BSN</td>
+      <td>Platinum Hydro Whey, and Serious MASS
+      </td>
+    </tr>
+    <tr>
+      <td>Dymatize</td>
+      <td>Gold Standart 100% CASEIN</td>
+    </tr>
+    <tr>
+      <td>FitMax</td>
+      <td>Gold Standart PRE-WORKOUT</td>
+    </tr>
+    <tr>
+      <td>IronFlex</td>
+      <td>ISO HD, and ISOLYZE Pure Whey Protein Isolate</td>
+    </tr>
+    <tr>
+      <td>Mutant </td>
+      <td>Naturally Flavored Gold Standart 100% WHEY</td>
+    </tr>
+    <tr>
+      <td>ON </td>
+      <td>Gold Standart 100% WHEY, Gold Standart PRE-WORKOUT, and Platinum Hydro WHEY</td>
+    </tr>
+    <tr>
+      <td>Ultimate Nutrition </td>
+      <td>Nuun Hydration</td>
+    </tr>
+  </table>
+  <footer>
+    &copy; <span id="year"></span> | ID: 20230125 | Bassant Montasser Shaban
+  </footer>
+  <script src="gifts-page.js"></script>
+  <script src="themes2/theme.js"></script>
+</body>
+
+</html>
