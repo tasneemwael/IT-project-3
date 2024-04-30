@@ -177,7 +177,7 @@ nav {
 
 }
 
-.card button {
+button {
     padding: 15px 20px;
     margin-top: 20px;
     background-color: var(--purple4);
@@ -191,7 +191,7 @@ nav {
 
 }
 
-.card button:hover{
+button:hover{
   background-color: var(--purple);
 }
 
