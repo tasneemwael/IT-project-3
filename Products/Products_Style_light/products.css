@@ -110,18 +110,6 @@
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #video {
     position: relative;
     overflow: hidden;
@@ -153,5 +141,5 @@ video {
   font-family: "Signika";
   color: #211951;
   font-weight: bold;
-  position: relative; 
+  position: relative;
 }
