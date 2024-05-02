@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-  <header>
+ <header>
     <nav>
       <div class="theme-selector">
         <select name="Themes" id="themeSelect">
@@ -37,6 +38,10 @@
           <option value="theme2">Theme 2</option>
         </select>
       </div>
+      <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Search...">
+              <button type="submit"><i class="fa fa-search" style="font-size: 22px;"></i></button>
+      </form>
       <ul class="navbar">
         <li><a class="active" href="../index.html">Home</a></li>
         <li><a href="../Products/product.html">Shop</a></li>
@@ -47,7 +52,7 @@
         <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </nav>
-  </header>
+  </header>
 
 
 
