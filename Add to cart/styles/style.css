@@ -3,6 +3,31 @@ body {
   margin: 0;
   padding: 0;
 }
+#searchForm {
+  float: left;
+  margin-right: 300px;
+}
+
+#searchInput {
+  width: 250px;
+  height: 25px;
+  border: none;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  background-color: #211951;
+  color: white;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 80px;
+  margin-top: 0;
+  height: 45px;
+  width: 45px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
 
 
 .container {
