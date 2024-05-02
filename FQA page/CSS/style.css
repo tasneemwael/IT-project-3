@@ -1,4 +1,10 @@
-iframe {
+.pannel {
+    position: relative;
+    overflow: hidden;
+}
+.pannel iframe {
     width: 100%;
-    height: 500px;
+    height: 100%;
+    border: none;
+
 }
