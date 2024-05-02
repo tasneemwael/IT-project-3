@@ -1,4 +1,4 @@
-/* Common styles */
+
 .product-container {
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ video {
   position: absolute;
   font-size: 80px;
   margin-top: 320px;
-  margin-left: 100px; 
+  margin-left: 100px;
   max-width: 40%;
   font-family: "Signika";
   color: #baafff;
