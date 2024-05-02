@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: var(--purple6);
+  background-color: var(--purple6); 
 }
 
 p,
@@ -11,26 +11,27 @@ table{
 
 .packages{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 75px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  padding: 50px;
 }
-
 
 .package-ditails{
   background-color: var(--purple1);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-left: 75px;
   margin-bottom: 50px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .images{
   display: flex;
   width: 300px;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -46,7 +47,7 @@ table{
 
 .products-name{
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 400px;
 }
 
 .first-product,
@@ -55,14 +56,14 @@ table{
   line-height: 5px;
   margin-top: 15px;
   margin-bottom: 0px;
-  text-align: left;
+  text-align: center;
   font-size: 17px;
-
+  
 }
 
 .prices{
   display: flex;
-  width: 200px;
+  width: 400px;
   align-items: center;
   justify-content: center;
 }
@@ -79,7 +80,7 @@ table{
 
 .button{
   display: flex;
-  width: 230px;
+  width: 400px;
   align-items: center;
   justify-content: center;
 }
@@ -93,7 +94,7 @@ table{
   color: white;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; 
   transition: opacity 0.1s;
 }
 .select-option-button:hover{
@@ -126,6 +127,12 @@ table{
   border-radius: 15px;
 }
 
+.valid-name{
+  display: none;
+  color:red;
+  font-size: 12px;
+}
+
 .buttons{
   display: flex;
   justify-content: space-between;
@@ -149,3 +156,23 @@ table{
 .cancle-button:hover{
   opacity:0.5;
 }
+
+table{
+  border-style: solid;
+  border-color: var(--purple1);
+  margin-bottom: 40px;
+  margin-left: 40px;
+  width: 70%;
+  font-size: 20px;
+}
+
+th{
+  color: var(--Light-green1);
+  height: 50px;
+}
+
+td{
+  background-color: var(--purple1);
+  padding: 15px;
+}
+
