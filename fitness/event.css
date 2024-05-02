@@ -57,16 +57,21 @@ h1 {
     width: auto;
     height: auto; 
   }.custom-button {
-    padding: 10px 20px; /* Adjust padding to change button size */
-    background-color: #0a3b96; /* Change background color */
-    color: white; /* Change text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove default underline */
-    display: inline-block; /* Ensure button behaves like a block element */
-    font-size: 20px; /* Change font size */
-    font-family: Arial, sans-serif; /* Change font family */
+    padding: 10px 20px; 
+    background-color: #0a3b96; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
 }
+
+.custom-button:hover {
+    background-color: #7371f7; 
+}
+
 
 .custom-button:hover {
     background-color: #7371f7; /* Change background color on hover */
