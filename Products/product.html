@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="stylesheet" href="Products_Style_light/products.css" id="theme">
-  <link rel="stylesheet" id='themeStylesheet' href="themes/default.css">
+  <link rel="stylesheet" href="themes/default.css" id='themeStylesheet'>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Signika:wght@300..700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -38,7 +39,16 @@
           <option value="theme2">Theme 2</option>
         </select>
       </div>
+
       <ul class="navbar">
+        <div class="search">
+            <form action="#" id="searchForm">
+                  <input type="text" placeholder="Search Category" name="search" id="searchInput">
+                      <button>
+                          <i class="fa fa-search" style="font-size: 22px;"></i>
+                      </button>
+            </form>
+          </div>
         <li><a class="active" href="../index.html">Home</a></li>
         <li><a href="product.html">Shop</a></li>
         <li><a href="../fitness/blog.html">Blog</a></li>
@@ -58,11 +68,13 @@
     <div class="categories">
       <div class="products-title">Recent Products</div>
 
-      <button class="category" data-category="protein">Protein</button>
-      <button class="category" data-category="bcaa">BCAA</button>
-      <button class="category" data-category="creatine">Creatine</button>
-      <button class="category" data-category="vitamins">Vitamins</button>
+      <button class="category" data-category="protein" onclick="showCategoryPhotos('protein')">Protein</button>
+      <button class="category" data-category="bcaa" onclick="showCategoryPhotos('bcaa')">BCAA</button>
+      <button class="category" data-category="creatine" onclick="showCategoryPhotos('creatine')">Creatine</button>
+      <button class="category" data-category="vitamins" onclick="showCategoryPhotos('vitamins')">Vitamins</button>
     </div>
+
+    <div id="noResultsMessage" style="display: none;">No results found <br> Please enter a valid category. e.g., Protein, BCAA, Creatine, Vitamins...</div>
 
     <div class="product-photos">
 
